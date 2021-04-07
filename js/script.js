@@ -28,17 +28,17 @@ $(function () {
             formBuilder.actions.getData('json', true);
             console.log('alldataset', formBuilder.actions.getData('json', true));
 
-            $.ajax({
-                type: "POST",
-                url: "<?php echo base_url(); ?>index.php/front/Login",
-                data: {
-                    email: email
-                },
-                success: function(data) {
-                    // var obj = $.parseJSON(data);    
+            // $.ajax({
+            //     type: "POST",
+            //     url: "<?php echo base_url(); ?>index.php/front/Login",
+            //     data: {
+            //         email: email
+            //     },
+            //     success: function(data) {
+            //         // var obj = $.parseJSON(data);    
                     
-                }
-            });
+            //     }
+            // });
         });
     }, 1000);
 
